@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세련된 포트폴리오</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #f7f8fa;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 0 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #2d6cdf;
+            letter-spacing: 2px;
+        }
+        nav a {
+            color: #222;
+            text-decoration: none;
+            margin-left: 32px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #2d6cdf;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            background: linear-gradient(120deg, #e0e7ff 0%, #f7f8fa 100%);
+            text-align: center;
+            padding: 80px 20px 40px 20px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #2d6cdf;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 32px;
+            color: #555;
+        }
+        .hero .cta-btn {
+            background: #2d6cdf;
+            color: #fff;
+            border: none;
+            padding: 14px 36px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 16px rgba(45,108,223,0.08);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .hero .cta-btn:hover {
+            background: #1a418a;
+            transform: translateY(-2px) scale(1.03);
+        }
+        .about {
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(45,108,223,0.07);
+            padding: 48px 32px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2rem;
+            color: #2d6cdf;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        .about p {
+            font-size: 1.1rem;
+            color: #444;
+        }
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 16px 0;
+            }
+            nav a {
+                margin: 12px 0 0 0;
+                display: block;
+            }
+            .about {
+                padding: 32px 10px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">PORTFOLIO</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <h1>안녕하세요!<br>세련된 포트폴리오에 오신 것을 환영합니다.</h1>
+        <p>HTML과 CSS만으로 제작된 모던 웹페이지 예시입니다.<br>반응형 디자인과 깔끔한 UI를 경험해보세요.</p>
+        <button class="cta-btn" onclick="window.location.href='#about'">더 알아보기</button>
+    </section>
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>30대 남자가 AI를 배우는 중입니다.</p>
+    </section>
+</body>
+</html>
